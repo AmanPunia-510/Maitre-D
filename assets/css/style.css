@@ -1,1 +1,49 @@
 @import url("../css/root.css");
+
+
+.section1 {
+    background-image: url(../images/mian-section-img-2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-txt {
+    max-width: 908px;
+    text-align: center;
+    margin-top: 128px;
+}
+
+.submit-btn {
+    width: 147px;
+    height: 48px;
+    border-radius: 30.5px;
+    background: var(--submit-btn);
+    margin-top: 69px;
+}
+
+@media (min-width: 768px) {
+    .main-txt::after {
+        content: '';
+        position: absolute;
+        top: 52%;
+        left: 7%;
+        background-image: url(../images/main-txt-before.png);
+        background-repeat: no-repeat;
+        height: 102px;
+        width: 87.85px;
+    }
+}
+
+@media (min-width: 992px) {
+    .main-txt::after {
+        content: '';
+        position: absolute;
+        top: 80%;
+        left: 4%;
+        background-image: url(../images/main-txt-before.png);
+        background-repeat: no-repeat;
+        height: 102px;
+        width: 87.85px;
+    }
+}
