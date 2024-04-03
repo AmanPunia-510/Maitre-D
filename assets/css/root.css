@@ -12,6 +12,8 @@
     --color-white: #ffffff;
     --color-black: #000000;
     --color-4d: #4D4D4D;
+    --shadow-color: rgb(204, 198, 198);
+    --hover-shadow: 0px 4px 17px 0px #FF586E47;
     --submit-btn: linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
     --liner-gradient: linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
 
@@ -20,6 +22,7 @@
     --fs-16: 16px;
     --fs-61: 61px;
     --fs-20: 20px;
+    --fs-27: 27px;
     --fs-30: 30px;
     --fs-46: 46px;
     --fs-36: 36px;
@@ -63,6 +66,10 @@
 
 .fs-20 {
     font-size: var(--fs-20);
+}
+
+.fs-27 {
+    font-size: var(--fs-27);
 }
 
 .fs-40 {
@@ -126,7 +133,7 @@
         font-size: var(--fs-61);
     }
 
-    .fs-lg-40{
+    .fs-lg-40 {
         font-size: var(--fs-40);
     }
 }

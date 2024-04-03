@@ -37,7 +37,7 @@
 
 .txt-color {
     background: var(--liner-gradient);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -58,6 +58,79 @@
 
 .sec2-p {
     padding-top: 12px;
+    z-index: 1;
+}
+
+.section3 {
+    background-image: url(../images/section3.png);
+    background-position: center;
+    background-size: 100% 100%;
+    top: 60px;
+}
+
+.top-165 {
+    top: 165px;
+}
+
+.hover-box {
+    box-shadow: 0px 0px 15px 0px var(--shadow-color);
+    border-radius: 8px;
+    padding: 40px 18px;
+    transition: all 200ms linear !important;
+}
+
+.hover-box:hover {
+    background-image: url(../images/sec3-hover.png);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.hover-box:hover .easy {
+    color: var(--color-white);
+}
+
+.hover-box:hover .sec3-p {
+    color: var(--color-white);
+}
+
+.hover-box:hover .svg1 {
+    background: var(--color-white);
+}
+
+.hover-box:hover .svg1 svg path {
+    fill: url('#MyGradient');
+}
+
+.svg1 {
+    height: 87px;
+    width: 87px;
+    border-radius: 50%;
+    background: var(--liner-gradient);
+    box-shadow: var(--hover-shadow);
+}
+
+.easy {
+    margin-top: 30px;
+}
+
+.sec3-p {
+    max-width: 257px;
+    margin-top: 10px;
+}
+
+.mt-70 {
+    margin-top: 70px;
+}
+
+.sign-btn {
+    width: 212px;
+    height: 47px;
+    border-radius: 30.5px;
+    background: var(--submit-btn);
+    margin-top: 40px;
+    border: none;
+    outline: none;
 }
 
 @media (min-width: 576px) {
@@ -85,6 +158,10 @@
     .under-top-layer {
         top: 6%;
     }
+
+    .section3 {
+        top: 169px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -98,6 +175,15 @@
         height: 102px;
         width: 87.85px;
     }
+
+    .hover-box:hover {
+        margin-top: -43px;
+        background-image: url(../images/sec3-hover.png);
+        background-size: cover;
+        background-position: center;
+        cursor: pointer;
+    }
+
 }
 
 @media (min-width: 1200px) {
