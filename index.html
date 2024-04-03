@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -212,28 +220,60 @@
         </div>
     </section>
 
-    <section class="section4 pt-md-120">
-        <div class="container d-flex flex-column align-items-center">
+    <section class="section4 pt-md-120 overflow-hidden">
+        <div class="container d-flex flex-column align-items-center mb-78">
             <div
                 class="about_us txt-color text-center fw-600 fs-16 lh-150 ff-sans position-relative d-inline text-center">
                 Features</div>
             <div class="what-d ff-sans lh-150 color-black fw-700 fs-27 fs-sm-36 fs-lg-40 pt-2">Why Choose<span
                     class="txt-color">Maître D?</span></div>
         </div>
-
         <div class="container">
-            <div class="row justify-content-center w-100 mt-112">
+            <div class="slider">
                 <div class="box-4">
-                    <div class="row align-items-center justify-content-between">
+                    <div class="row justify-content-between align-items-center align-items-xxl-end">
                         <div class="col-12 col-lg-5">
                             <img src="./assets/images/section4.png" alt="section4.png" class="image-section4 w-100">
                         </div>
-                        <div class="col-12 col-lg-6 pt-5 pt-lg-0">
+                        <div class="col-12 col-lg-6 pt-5 pt-lg-0 pb-5 ps-4 ps-xl-0">
                             <div class="sec4-h ff-sans lh-150 color-black fw-700 fs-24">Manage Your <span
-                                    class="txt-color">Customer Queues</span>
+                                    class="txt-color">Customer
+                                    Queues</span>
                             </div>
                             <p class="sec2-p mb-0 fw-400 fs-16 lh-150 ff-sans color-4d text-justify position-relative">
-                                The Maitre D queue management system is designed to allow your customers to sign up
+                                The Maitre D queue management system is designed to allow your customers to sign
+                                up
+                                for walk-in appointments and select
+                                the services they want ahead of time. The queue will provide them with estimated
+                                wait times, costs and will allow them
+                                to even select their preferred stylist.</p>
+
+                            <p class="sec2-p mb-0 fw-400 fs-16 lh-150 ff-sans color-4d text-justify position-relative">
+                                As the queue gets bigger or smaller, its easy to monitor your operations and
+                                understand when wait periods are getting
+                                too long to service your customer base and to better resource your stores during
+                                busy periods. Beat the frustration of
+                                your customers ahead of time and help manage how they wait for your services</p>
+                            <button
+                                class="buy-btn mt-4 d-flex justify-content-center align-items-center fw-700 fs-20 lh-150 ff-sans color-white">
+                                Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-4">
+                    <div class="row justify-content-between align-items-center align-items-xxl-end">
+                        <div class="col-12 col-lg-5">
+                            <img src="./assets/images/section4.png" alt="section4.png" class="image-section4 w-100">
+                        </div>
+                        <div class="col-12 col-lg-6 pt-5 pt-lg-0 pb-5 ps-4 ps-xl-0">
+                            <div class="sec4-h ff-sans lh-150 color-black fw-700 fs-24">Manage Your <span
+                                    class="txt-color">Customer
+                                    Queues</span>
+                            </div>
+                            <p class="sec2-p mb-0 fw-400 fs-16 lh-150 ff-sans color-4d text-justify position-relative">
+                                The Maitre D queue management system is designed to allow your customers to sign
+                                up
                                 for walk-in appointments and select
                                 the services they want ahead of time. The queue will provide them with estimated
                                 wait times, costs and will allow them
@@ -253,11 +293,21 @@
                 </div>
             </div>
         </div>
+
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="./assets/js/script.js"></script>
 </body>
 
