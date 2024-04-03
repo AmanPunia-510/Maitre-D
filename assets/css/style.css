@@ -31,7 +31,7 @@
     margin-bottom: 220px;
 }
 
-.pb-300{
+.pb-300 {
     padding-bottom: 300px;
 }
 
@@ -137,6 +137,24 @@
     outline: none;
 }
 
+.buy-btn {
+    width: 162px;
+    height: 47px;
+    border-radius: 30.5px;
+    background: var(--submit-btn);
+    border: none;
+    outline: none;
+}
+
+.mt-112 {
+    margin-top: 112px;
+}
+
+.box-4 {
+    box-shadow: 0px 4px 20px 0px #bbbbbb7a;
+    border-radius: 8px;
+}
+
 @media (min-width: 576px) {
     .under-top-layer {
         top: 4%;
@@ -167,7 +185,7 @@
         top: 169px;
     }
 
-    .pt-md-120{
+    .pt-md-120 {
         padding-top: 140px;
     }
 }
