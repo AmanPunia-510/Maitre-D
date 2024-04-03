@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <section class="section1 w-100 min-vh-100">
+    <section class="section1 w-100 min-vh-100 d-flex flex-column">
         <nav>
             <div class="container">
                 <div class="navbar d-flex align-items-center justify-content-between pt-3">
@@ -31,6 +31,12 @@
                             </svg>
                         </div>
                         <div class="logo-txt ff-sans fw-400 fs-24 lh-150 color-black">maître d</div>
+                    </div>
+
+                    <div class="menubar d-flex d-lg-none flex-column justify-content-evenly align-items-center">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
                     <div class="navbar-items d-flex gap-5 align-items-center">
                         <li class="list list-unstyled"><a href="#"
@@ -67,9 +73,25 @@
             </div>
         </nav>
 
-        <div class="container">
-            <div class="main-txt fw-800 fs-61 lh-150 ff-sans color-black mx-auto position-relative">Maitre D – Store Management for Barbers</div>
-            <div class="submit-btn d-flex justify-content-center align-items-center fw-700 fs-20 lh-150 ff-sans color-white mx-auto">Submit</div>
+        <div class="container d-flex justify-content-center align-items-center flex-grow-1">
+            <div class="row flex-column mb-220">
+                <div
+                    class="main-txt fw-800 fs-30 fs-sm-36 fs-md-46 fs-lg-61 lh-150 ff-sans color-black mx-auto position-relative">
+                    Maitre D – Store
+                    Management for Barbers</div>
+                <div
+                    class="submit-btn d-flex justify-content-center align-items-center fw-700 fs-20 lh-150 ff-sans color-white mx-auto">
+                    Submit</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section2 w-100 min-vh-100 position-relative">
+        <div class="top-layer position-absolute top-0 w-100">
+            <img src="./assets/images/street.png" alt="street" class="street w-100">
+        </div>
+        <div class="under-top-layer position-absolute w-100">
+            <img src="./assets/images/street-after.png" alt="street-after" class="under-layer w-100">
         </div>
     </section>
 

@@ -21,6 +21,9 @@
     --fs-16: 16px;
     --fs-61: 61px;
     --fs-20: 20px;
+    --fs-30: 30px;
+    --fs-46: 46px;
+    --fs-36: 36px;
     --fs-40: 40px;
 
     /* line-height */
@@ -41,6 +44,10 @@
 
 .fs-24 {
     font-size: var(--fs-24);
+}
+
+.fs-30 {
+    font-size: var(--fs-30);
 }
 
 .fs-16 {
@@ -83,7 +90,7 @@
     font-weight: var(--fw-800);
 }
 
-.lh-150{
+.lh-150 {
     line-height: var(--line-height-150);
 }
 
@@ -101,4 +108,22 @@
 
 .color-4d {
     color: var(--color-4d);
+}
+
+@media (min-width: 576px) {
+    .fs-sm-36 {
+        font-size: var(--fs-36);
+    }
+}
+
+@media (min-width: 768px) {
+    .fs-md-46 {
+        font-size: var(--fs-46);
+    }
+}
+
+@media (min-width: 992px) {
+    .fs-lg-61 {
+        font-size: var(--fs-61);
+    }
 }
