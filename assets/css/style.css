@@ -19,6 +19,8 @@
     border-radius: 30.5px;
     background: var(--submit-btn);
     margin-top: 40px;
+    border: none;
+    outline: none;
 }
 
 .under-top-layer {
@@ -29,9 +31,42 @@
     margin-bottom: 220px;
 }
 
+.top-170 {
+    top: 114px;
+}
+
+.txt-color {
+    background: var(--liner-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about_us::after {
+    content: '';
+    position: absolute;
+    right: -71%;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1px;
+    width: 44px;
+    background: var(--liner-gradient);
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.sec2-p {
+    padding-top: 12px;
+}
+
 @media (min-width: 576px) {
     .under-top-layer {
         top: 4%;
+    }
+
+    .top-170 {
+        top: 170px;
     }
 }
 

@@ -11,10 +11,9 @@
     /* colors */
     --color-white: #ffffff;
     --color-black: #000000;
-    --color-about: linear-gradient(0deg, #FFFFFF, #FFFFFF),
-        linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
     --color-4d: #4D4D4D;
     --submit-btn: linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
+    --liner-gradient: linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
 
     /* font-size */
     --fs-24: 24px;
@@ -48,6 +47,10 @@
 
 .fs-30 {
     font-size: var(--fs-30);
+}
+
+.fs-36 {
+    font-size: var(--fs-36);
 }
 
 .fs-16 {
@@ -102,10 +105,6 @@
     color: var(--color-black);
 }
 
-.color-about {
-    color: var(--color-about);
-}
-
 .color-4d {
     color: var(--color-4d);
 }
@@ -125,5 +124,9 @@
 @media (min-width: 992px) {
     .fs-lg-61 {
         font-size: var(--fs-61);
+    }
+
+    .fs-lg-40{
+        font-size: var(--fs-40);
     }
 }
