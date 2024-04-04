@@ -17,6 +17,7 @@
     --border-color: #FFFFFF40;
     --color-b2: #B2B2B2;
     --submit-btn: linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
+    --submit-hover: linear-gradient(to left, #FD9B2B 13.58%, #F14F09 86.99%);
     --liner-gradient: linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
 
     /* font-size */
@@ -128,13 +129,17 @@
     color: var(--color-4d);
 }
 
-.color-b2{
+.color-b2 {
     color: var(--color-b2);
 }
 
 @media (min-width: 576px) {
     .fs-sm-36 {
         font-size: var(--fs-36);
+    }
+
+    .fs-sm-20 {
+        font-size: var(--fs-20);
     }
 }
 

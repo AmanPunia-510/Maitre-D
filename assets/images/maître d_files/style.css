@@ -185,7 +185,7 @@
     width: 77px;
     border-radius: 19px;
     background-color: var(--color-white);
-    padding: 0 4px;
+    padding: 0 3.86px;
 }
 
 .toggle-ball {
@@ -358,18 +358,9 @@
     fill: var(--color-black);
 }
 
-.opacity {
-    opacity: 100% !important;
-    transition: all 1s linear !important;
-}
-
-.animation-part {
-    opacity: 0%;
-}
-
 @media (min-width: 576px) {
     .under-top-layer {
-        top: 5%;
+        top: 4%;
     }
 
     .top-170 {
@@ -396,7 +387,7 @@
     }
 
     .under-top-layer {
-        top: 14%;
+        top: 6%;
     }
 
     .section3 {
