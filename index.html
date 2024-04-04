@@ -3,7 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
         integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
@@ -308,14 +312,18 @@
             <div class="row align-items-center">
                 <div class="col-12 col-lg-6">
                     <div class="commen-price-card">
-                        <div class="main-price-card  d-flex align-items-center gap-4">
-                            <div class="txt1-price fw-600 fs-16 fs-xl-20 lh-150 ff-sans color-white text-nowrap">Monthly
+                        <div
+                            class="main-price-card  d-flex align-items-center justify-content-between justify-content-sm-center gap-sm-4">
+                            <div class="txt1-price d-none d-sm-inline-block fw-600 fs-16 fs-xl-20 lh-150 ff-sans color-white text-nowrap">Monthly
                                 Pricing</div>
                             <div class="toggle d-flex align-items-center">
                                 <div class="toggle-ball"></div>
                             </div>
-                            <div class="txt1-price fw-400 fs-16 fs-xl-20 lh-150 ff-sans color-white text-nowrap">Yearly
+                            <div class="txt1-price fw-400 fs-16 fs-xl-20 lh-150 ff-sans color-white text-nowrap d-none d-sm-inline-block">Yearly
                                 Pricing</div>
+                            <div class="click fs-27 d-sm-none">
+                                <i class="fa-solid color-white fa-computer-mouse"></i>
+                            </div>
                         </div>
                         <div class="pricing-card">
                             <div class="manage-one-svg d-flex align-items-center justify-content-between pb-29">
@@ -572,6 +580,57 @@
             </div>
         </div>
     </section>
+
+    <section class="section6">
+        <div class="container pt-130">
+            <div class="row mb-5 align-items-center">
+                <div class="col-12 col-lg-6">
+                    <div class="about_us txt-color fw-600 fs-16 lh-150 ff-sans position-relative d-inline-block">Contact
+                        US</div>
+
+                    <div class="what-d ff-sans lh-150 color-black fw-700 fs-30 fs-sm-36 fs-lg-40 pt-3 pb-75">Get in
+                        touch!
+                    </div>
+
+                    <form action="" class="w-100">
+                        <div class="row">
+                            <div class="col-12 col-sm-7">
+                                <input type="text" placeholder="Full Name"
+                                    class="name commen-input fw-400 fs-16 lh-150 color-4d ff-sans">
+                            </div>
+                            <div class="col-12 pt-4 pt-sm-0 col-sm-5">
+                                <input type="email" placeholder="Email Address"
+                                    class="name commen-input fw-400 fs-16 lh-150 color-4d ff-sans">
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-12">
+                                <input type="email" placeholder="Company Name"
+                                    class="name commen-input fw-400 fs-16 lh-150 color-4d ff-sans">
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-12">
+                                <textarea class="textarea commen-input fw-400 fs-16 lh-150 color-4d ff-sans">Message
+                            </textarea>
+                            </div>
+                        </div>
+                    </form>
+                    <button
+                        class="submit-btn d-flex justify-content-center align-items-center fw-700 fs-20 lh-150 ff-sans color-white">
+                        Submit</button>
+                </div>
+                <div class="col-1 d-none d-lg-block"></div>
+                <div class="col-12 col-lg-5">
+                    <img src="./assets/images/sign.png" alt="sign-png" class="sign-image w-100">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
