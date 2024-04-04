@@ -13,15 +13,18 @@
     --color-black: #000000;
     --color-4d: #4D4D4D;
     --shadow-color: rgb(204, 198, 198);
+    --shadow-one-color: #0000000F;
     --hover-shadow: 0px 4px 17px 0px #FF586E47;
     --submit-btn: linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
     --liner-gradient: linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
 
     /* font-size */
     --fs-24: 24px;
+    --fs-14: 14px;
     --fs-16: 16px;
     --fs-61: 61px;
     --fs-20: 20px;
+    --fs-48: 48px;
     --fs-27: 27px;
     --fs-30: 30px;
     --fs-46: 46px;
@@ -48,8 +51,16 @@
     font-size: var(--fs-24);
 }
 
+.fs-14 {
+    font-size: var(--fs-14);
+}
+
 .fs-30 {
     font-size: var(--fs-30);
+}
+
+.fs-48 {
+    font-size: var(--fs-48);
 }
 
 .fs-36 {
@@ -135,5 +146,11 @@
 
     .fs-lg-40 {
         font-size: var(--fs-40);
+    }
+}
+
+@media (min-width: 1200px) {
+    .fs-xl-20 {
+        font-size: var(--fs-20);
     }
 }
