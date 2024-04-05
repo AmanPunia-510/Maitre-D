@@ -409,6 +409,10 @@
     fill: url('#MyGradient');
 }
 
+.not-hover:hover{
+color: var(--color-white);
+}
+
 @keyframes yellow-ball {
     0% {
         right: 8%;
