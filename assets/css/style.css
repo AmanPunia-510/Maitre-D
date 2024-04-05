@@ -83,26 +83,26 @@
     transition: all 200ms linear !important;
 }
 
-.hover-box:hover {
+.col12-hover:hover .hover-box{
     background-image: url(../images/sec3-hover.png);
     background-size: cover;
     background-position: center;
     cursor: pointer;
 }
 
-.hover-box:hover .easy {
+.col12-hover:hover .easy {
     color: var(--color-white);
 }
 
-.hover-box:hover .sec3-p {
+.col12-hover:hover .sec3-p {
     color: var(--color-white);
 }
 
-.hover-box:hover .svg1 {
+.col12-hover:hover .svg1 {
     background: var(--color-white);
 }
 
-.hover-box:hover .svg1 svg path {
+.col12-hover:hover .svg1 svg path {
     fill: url('#MyGradient');
 }
 
@@ -193,6 +193,13 @@
     height: 27px;
     border-radius: 50%;
     background: var(--liner-gradient);
+    top: 50%;
+    left: 4px;
+    transform: translateY(-50%);
+}
+
+.right{
+    left: 46px;
 }
 
 .pricing-card {
@@ -358,13 +365,26 @@
     fill: var(--color-black);
 }
 
-.opacity {
-    opacity: 100% !important;
-    transition: all 1s linear !important;
+.search-box {
+    right: 0;
+    top: 45px;
 }
 
-.animation-part {
-    opacity: 0%;
+#search {
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid var(--color-black);
+    box-shadow: 0px 0px 15px var(--shadow-color);
+    padding: 8px 12px;
+}
+
+#result-here div{
+    margin-top: 10px;
+    padding: 5px 5px;
+    background: var(--liner-gradient);
+    border-radius: 6px;
+    color: var(--color-white);
+    font-family: 'work-sans';
 }
 
 @media (min-width: 576px) {
@@ -426,7 +446,7 @@
         width: 87.85px;
     }
 
-    .hover-box:hover {
+    .col12-hover:hover .hover-box {
         margin-top: -43px;
         background-image: url(../images/sec3-hover.png);
         background-size: cover;
