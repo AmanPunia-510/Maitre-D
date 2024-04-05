@@ -30,7 +30,7 @@
   --fs-30: 30px;
   --fs-sm-36: 36px;
   --fs-lg-40: 40px;
-  --fs-md-46: 48px;
+  --fs-md-48: 48px;
   --fs-lg-61: 61px;
 
   /* line-height */
@@ -83,7 +83,7 @@
 }
 
 .fs-48 {
-  font-size: var(--fs-48);
+  font-size: var(--fs-md-48);
 }
 
 .fs-61 {
@@ -151,8 +151,8 @@
 }
 
 @media (min-width: 768px) {
-  .fs-md-46 {
-    font-size: var(--fs-md-46);
+  .fs-md-48 {
+    font-size: var(--fs-md-48);
   }
 }
 
