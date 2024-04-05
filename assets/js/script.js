@@ -29,7 +29,11 @@ $(".slider").slick({
   ],
 });
 
+//  animations
+
 AOS.init();
+
+// work on search svg
 
 const search_svg = document.querySelector(".s-svg");
 const search_box = document.querySelector(".search-box");
@@ -98,7 +102,7 @@ toggle.addEventListener("click", () => {
     right1.setAttribute("src", "./assets/images/right.png");
     right2.setAttribute("src", "./assets/images/right.png");
     txt_449.innerHTML = "$900";
-    month.innerHTML = "/year.";
+    month.innerHTML = "/yearly";
   } else {
     right1.setAttribute("src", "./assets/images/wrong.png");
     right2.setAttribute("src", "./assets/images/wrong.png");
@@ -131,3 +135,21 @@ function toggleHandler() {
 handleMediaQueryChange(mediaQuery);
 
 mediaQuery.addListener(handleMediaQueryChange);
+
+// toggle navbar
+
+const navbar = document.querySelector(".navbar-items");
+const menubar = document.querySelector(".menubar");
+
+menubar.addEventListener("click", () => {
+  navbar.classList.toggle("show");
+  const body = document.querySelector("body");
+  if (navbar.classList.contains("show")) {
+    body.style.position = "fixed";
+    body.style.width = "100%";
+    body.style.top = "0";
+    body.style.left = "0";
+  } else {
+    body.style.position = "relative";
+  }
+});

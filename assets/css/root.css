@@ -22,17 +22,16 @@
   --liner-gradient: linear-gradient(96.64deg, #fd9b2b 13.58%, #f14f09 86.99%);
 
   /* font-size */
-  --fs-24: 24px;
   --fs-14: 14px;
   --fs-16: 16px;
-  --fs-61: 61px;
-  --fs-20: 20px;
-  --fs-48: 48px;
+  --fs-sm-20: 20px;
+  --fs-24: 24px;
   --fs-27: 27px;
   --fs-30: 30px;
-  --fs-46: 46px;
-  --fs-36: 36px;
-  --fs-40: 40px;
+  --fs-sm-36: 36px;
+  --fs-lg-40: 40px;
+  --fs-md-46: 48px;
+  --fs-lg-61: 61px;
 
   /* line-height */
   --line-height-150: 150%;
@@ -51,45 +50,47 @@
   font-family: "Work Sans", sans-serif;
 }
 
-.fs-24 {
-  font-size: var(--fs-24);
-}
-
 .fs-14 {
   font-size: var(--fs-14);
-}
-
-.fs-30 {
-  font-size: var(--fs-30);
-}
-
-.fs-48 {
-  font-size: var(--fs-48);
-}
-
-.fs-36 {
-  font-size: var(--fs-36);
 }
 
 .fs-16 {
   font-size: var(--fs-16);
 }
 
-.fs-61 {
-  font-size: var(--fs-61);
+.fs-20 {
+  font-size: var(--fs-sm-20);
 }
 
-.fs-20 {
-  font-size: var(--fs-20);
+.fs-24 {
+  font-size: var(--fs-24);
 }
 
 .fs-27 {
   font-size: var(--fs-27);
 }
 
-.fs-40 {
-  font-size: var(--fs-40);
+.fs-30 {
+  font-size: var(--fs-30);
 }
+
+.fs-36 {
+  font-size: var(--fs-sm-36);
+}
+
+.fs-40 {
+  font-size: var(--fs-lg-40);
+}
+
+.fs-48 {
+  font-size: var(--fs-48);
+}
+
+.fs-61 {
+  font-size: var(--fs-lg-61);
+}
+
+/* font weight */
 
 .fw-300 {
   font-weight: var(--fw-300);
@@ -115,9 +116,13 @@
   font-weight: var(--fw-800);
 }
 
+/* line-height */
+
 .lh-150 {
   line-height: var(--line-height-150);
 }
+
+/* colors */
 
 .color-white {
   color: var(--color-white);
@@ -136,28 +141,28 @@
 }
 
 @media (min-width: 576px) {
-  .fs-sm-36 {
-    font-size: var(--fs-36);
+  .fs-sm-20 {
+    font-size: var(--fs-sm-20);
   }
 
-  .fs-sm-20 {
-    font-size: var(--fs-20);
+  .fs-sm-36 {
+    font-size: var(--fs-sm-36);
   }
 }
 
 @media (min-width: 768px) {
   .fs-md-46 {
-    font-size: var(--fs-46);
+    font-size: var(--fs-md-46);
   }
 }
 
 @media (min-width: 992px) {
-  .fs-lg-61 {
-    font-size: var(--fs-61);
+  .fs-lg-40 {
+    font-size: var(--fs-lg-40);
   }
 
-  .fs-lg-40 {
-    font-size: var(--fs-40);
+  .fs-lg-61 {
+    font-size: var(--fs-lg-61);
   }
 
   .lh-lg-71 {
@@ -167,6 +172,6 @@
 
 @media (min-width: 1200px) {
   .fs-xl-20 {
-    font-size: var(--fs-20);
+    font-size: var(--fs-lg-20);
   }
 }

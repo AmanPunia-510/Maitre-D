@@ -1,5 +1,12 @@
 @import url("../css/root.css");
 
+.mycontainer {
+    max-width: 1140px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .section1 {
     background-image: url(../images/mian-section-img-2.png);
@@ -81,29 +88,6 @@
     border-radius: 8px;
     padding: 40px 18px;
     transition: all 200ms linear !important;
-}
-
-.col12-hover:hover .hover-box{
-    background-image: url(../images/sec3-hover.png);
-    background-size: cover;
-    background-position: center;
-    cursor: pointer;
-}
-
-.col12-hover:hover .easy {
-    color: var(--color-white);
-}
-
-.col12-hover:hover .sec3-p {
-    color: var(--color-white);
-}
-
-.col12-hover:hover .svg1 {
-    background: var(--color-white);
-}
-
-.col12-hover:hover .svg1 svg path {
-    fill: url('#MyGradient');
 }
 
 .svg1 {
@@ -199,7 +183,7 @@
     transition: all 200ms linear !important;
 }
 
-.right{
+.right {
     left: 46px;
 }
 
@@ -319,74 +303,27 @@
     margin-bottom: 120px;
 }
 
-.sec2-p {
-    max-width: 453px;
-}
-
 .doller-img {
     right: 27px;
     top: 29px;
 }
 
-/* .list a {
-    position: relative;
-}
-
-.list a::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    height: 3px;
-    width: 0%;
-    left: 0;
-    background-color: var(--color-black);
-    transition: all 200ms linear;
-}
-
-.list a:hover {
-    color: var(--color-black);
-}
-
-.list a:hover::after {
-    width: 100%;
-} */
-
-
 .list a::before {
-  margin-left: auto;
+    margin-left: auto;
 }
 
-.list a::after, .list a::before {
-  content: '';
-  width: 0%;
-  height: 3px;
-  background: var(--liner-gradient);
-  display: block;
-  transition: 0.5s;
-}
-
-.list a:hover::after, .list a:hover::before {
-  width: 100%;
-}
-
-.list a:hover{
-    -webkit-text-stroke: medium;
-    color: var(--color-black);
+.list a::after,
+.list a::before {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: var(--liner-gradient);
+    display: block;
+    transition: 0.5s;
 }
 
 .cursor {
     cursor: pointer;
-}
-
-.submit-btn:hover,
-.sign-btn:hover,
-.buy-btn:hover {
-    background: var(--submit-hover);
-    transition: all 0.8s linear;
-}
-
-.commen-nxt-prev:hover svg path {
-    fill: var(--color-black);
 }
 
 .search-box {
@@ -402,7 +339,7 @@
     padding: 8px 12px;
 }
 
-#result-here div{
+#result-here div {
     margin-top: 10px;
     padding: 5px 5px;
     background: var(--liner-gradient);
@@ -411,14 +348,14 @@
     font-family: 'work-sans';
 }
 
-.yellow-ball{
+.yellow-ball {
     width: 87px;
     height: 87px;
     border-radius: 50%;
     background-color: var(--yellow-ball);
     right: 57px;
     top: 200px;
-        width: 87px;
+    width: 87px;
     height: 87px;
     border-radius: 50%;
     background-color: var(--yellow-ball);
@@ -427,16 +364,62 @@
     animation: yellow-ball 20s linear infinite;
 }
 
+/*all hover */
+.list a:hover::after,
+.list a:hover::before {
+    width: 100%;
+}
+
+.list a:hover {
+    -webkit-text-stroke: medium;
+    color: var(--color-black);
+}
+
+.submit-btn:hover,
+.sign-btn:hover,
+.buy-btn:hover {
+    background: var(--submit-hover);
+}
+
+.commen-nxt-prev:hover svg path {
+    fill: var(--color-black);
+}
+
+
+.col12-hover:hover .hover-box {
+    background-image: url(../images/sec3-hover.png);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.col12-hover:hover .easy {
+    color: var(--color-white);
+}
+
+.col12-hover:hover .sec3-p {
+    color: var(--color-white);
+}
+
+.col12-hover:hover .svg1 {
+    background: var(--color-white);
+}
+
+.col12-hover:hover .svg1 svg path {
+    fill: url('#MyGradient');
+}
+
 @keyframes yellow-ball {
-    0%{
+    0% {
         right: 8%;
     }
-    50%{
+
+    50% {
         right: 103%;
     }
 
-    100%{
-           background: var(--liner-gradient);
+    100% {
+        background: var(--liner-gradient);
         right: 8%;
     }
 }
@@ -516,6 +499,10 @@
         border-radius: 10px;
     }
 
+    .sec2-p {
+        max-width: 488px;
+    }
+
 }
 
 @media (min-width: 1200px) {
@@ -531,12 +518,21 @@
         bottom: 14px;
         left: 50%;
     }
+
+    .next {
+        left: 88%;
+    }
+
+    .prev {
+        left: 7%;
+    }
 }
 
 @media (max-width: 992px) {
     .menubar {
         height: 45px;
         width: 40px;
+        z-index: 5;
     }
 
     .menubar span {
@@ -557,6 +553,7 @@
         align-items: center;
         justify-content: center;
         z-index: 3;
+        transition: all 0.3s linear !important;
     }
 
     .show {
@@ -565,7 +562,17 @@
 }
 
 @media (max-width : 576px) {
-    .main-price-card{
-     justify-content: space-between !important;
+    .main-price-card {
+        justify-content: space-between !important;
+    }
+
+    .search-box {
+        right: -100px;
+        top: 45px;
+    }
+
+    .box-4{
+    padding-top: 36px;
+    padding-right: 12px;
     }
 }
