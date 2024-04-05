@@ -348,6 +348,10 @@
     font-family: 'work-sans';
 }
 
+.z-1{
+    z-index: 3;
+}
+
 .yellow-ball {
     width: 87px;
     height: 87px;
@@ -571,8 +575,8 @@ color: var(--color-white);
     }
 
     .search-box {
-        right: -100px;
-        top: 45px;
+    right: -45px;
+    top: 45px;
     }
 
     .box-4{
