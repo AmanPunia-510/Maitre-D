@@ -119,8 +119,10 @@ const txt1Price = document.querySelector(".txt1-price");
 function handleMediaQueryChange(mediaQuery) {
   if (mediaQuery.matches) {
     toggle.addEventListener("click", toggleHandler);
+    txt1Price.textContent = "Monthly Pricing";
   } else {
     toggle.removeEventListener("click", toggleHandler);
+    txt1Price.textContent = "Monthly Pricing";
   }
 }
 

@@ -55,7 +55,7 @@
 .about_us::after {
     content: '';
     position: absolute;
-    right: -71%;
+    right: -90%;
     top: 50%;
     transform: translateY(-50%);
     height: 1px;
