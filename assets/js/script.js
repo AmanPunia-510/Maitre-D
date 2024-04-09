@@ -48,43 +48,6 @@ search_svg.addEventListener("click", () => {
   }
 });
 
-const keywords = [
-  "About Us",
-  "Features",
-  "Modules",
-  "Simple pricing for everyone",
-  "Get in touch!",
-];
-
-const result = document.querySelector("#result-here");
-const search = document.querySelector("#search");
-
-search.addEventListener("keyup", () => {
-  let filteredResults = [];
-  let input = search.value.toLowerCase();
-  if (input.length) {
-    filteredResults = keywords.filter((keyword) => {
-      return keyword.toLowerCase().includes(input);
-    });
-    displayResults(filteredResults);
-  } else {
-    result.textContent = "";
-  }
-});
-
-function displayResults(filteredResults) {
-  result.innerHTML = "";
-  if (filteredResults.length > 0) {
-    filteredResults.forEach((item) => {
-      const listItem = document.createElement("div");
-      listItem.textContent = item;
-      result.appendChild(listItem);
-    });
-  } else {
-    result.textContent = "No matching results found";
-  }
-}
-
 // work on toggle
 
 const toggle = document.querySelector(".toggle");
@@ -154,4 +117,62 @@ menubar.addEventListener("click", () => {
   } else {
     body.style.position = "relative";
   }
+});
+
+// searchbar
+
+const keywords = ["Home", "Modules", "Pricing", "Features", "Contact Us"];
+
+const keywordClasses = {};
+
+keywords.forEach((keyword, index) => {
+  let id;
+  if (index === 0) {
+    id = "home";
+  } else if (index === 1) {
+    id = "modules";
+  } else if (index === 2) {
+    id = "pricing";
+  } else if (index === 3) {
+    id = "features";
+  } else if (index === 4) {
+    id = "contact-us";
+  }
+  keywordClasses[keyword.toLowerCase()] = id;
+});
+
+const search = document.querySelector("#search");
+const result = document.querySelector("#result-here");
+
+search.addEventListener("keyup", () => {
+  let filter = [];
+  let input = search.value.trim().toLowerCase();
+
+  filter = keywords.filter((item) => {
+    return item.toLowerCase().includes(input);
+  });
+
+  result.textContent = "";
+
+  if (input.length === 0) {
+    return;
+  }
+
+  filter.forEach((value) => {
+    const anchor = document.createElement("a");
+    anchor.textContent = value;
+
+    anchor.setAttribute(
+      "href",
+      `#${String(keywordClasses[value.toLowerCase()])}`
+    );
+    anchor.setAttribute(
+      "class",
+      `${String(keywordClasses[value.toLowerCase()])} commen-js`
+    );
+
+    result.appendChild(anchor);
+  });
+
+  console.log(filter);
 });
