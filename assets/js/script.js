@@ -31,7 +31,9 @@ $(".slider").slick({
 
 //  animations
 
-AOS.init();
+AOS.init({
+  once: true,
+});
 
 // work on search svg
 
@@ -117,62 +119,4 @@ menubar.addEventListener("click", () => {
   } else {
     body.style.position = "relative";
   }
-});
-
-// searchbar
-
-const keywords = ["Home", "Modules", "Pricing", "Features", "Contact Us"];
-
-const keywordClasses = {};
-
-keywords.forEach((keyword, index) => {
-  let id;
-  if (index === 0) {
-    id = "home";
-  } else if (index === 1) {
-    id = "modules";
-  } else if (index === 2) {
-    id = "pricing";
-  } else if (index === 3) {
-    id = "features";
-  } else if (index === 4) {
-    id = "contact-us";
-  }
-  keywordClasses[keyword.toLowerCase()] = id;
-});
-
-const search = document.querySelector("#search");
-const result = document.querySelector("#result-here");
-
-search.addEventListener("keyup", () => {
-  let filter = [];
-  let input = search.value.trim().toLowerCase();
-
-  filter = keywords.filter((item) => {
-    return item.toLowerCase().includes(input);
-  });
-
-  result.textContent = "";
-
-  if (input.length === 0) {
-    return;
-  }
-
-  filter.forEach((value) => {
-    const anchor = document.createElement("a");
-    anchor.textContent = value;
-
-    anchor.setAttribute(
-      "href",
-      `#${String(keywordClasses[value.toLowerCase()])}`
-    );
-    anchor.setAttribute(
-      "class",
-      `${String(keywordClasses[value.toLowerCase()])} commen-js`
-    );
-
-    result.appendChild(anchor);
-  });
-
-  console.log(filter);
 });

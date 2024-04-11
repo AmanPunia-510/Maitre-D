@@ -17,10 +17,10 @@
   --border-color: #ffffff40;
   --color-b2: #b2b2b2;
   --yellow-ball: #ecb239;
+  --color-orange: #ff4500;
   --submit-btn: linear-gradient(96.64deg, #fd9b2b 13.58%, #f14f09 86.99%);
   --submit-hover: linear-gradient(to left, #fd9b2b 13.58%, #f14f09 86.99%);
   --liner-gradient: linear-gradient(96.64deg, #fd9b2b 13.58%, #f14f09 86.99%);
-
   /* font-size */
   --fs-14: 14px;
   --fs-16: 16px;
@@ -172,6 +172,6 @@
 
 @media (min-width: 1200px) {
   .fs-xl-20 {
-    font-size: var(--fs-lg-20);
+    font-size: var(--fs-sm-20);
   }
 }
